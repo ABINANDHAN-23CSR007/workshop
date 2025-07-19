@@ -1,0 +1,117 @@
+.signup-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f0fdf4, #ffffff, #f0f9ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.signup-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.signup-bubble {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: pulse 6s infinite ease-in-out;
+}
+
+.bubble-blue {
+  background-color: #93c5fd;
+  top: -10rem;
+  right: -10rem;
+  animation-delay: 0s;
+}
+
+.bubble-green {
+  background-color: #86efac;
+  bottom: -10rem;
+  left: -10rem;
+  animation-delay: 2s;
+}
+
+.signup-content {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.signup-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signup-logo {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(to right, #10b981, #3b82f6);
+  border-radius: 0.75rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.signup-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.signup-subtitle {
+  color: #4b5563;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ... rest of the styles similar to LoginPage.css ... */
+
+.switch-button {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.switch-button:hover {
+  text-decoration: underline;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
+}
